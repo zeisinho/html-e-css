@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+.nav {
+    background-color: rgb(25, 25, 25);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 21px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #DDD;
+    padding: 20px;
+
+}
+
+.nav-list a:hover {
+    color: rgb(87, 87, 249);
+}
+
+.main {
+    width: 100%;
+    background-color: black;
+    height: calc(100vh - 80px);
+    background-image: url(./imagens/flat-lay-desk-concept-with-copy-space.jpg);
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+}
+
+.main h1 {
+    color: #FFFFFF;
+    font-size: 54px;
+
+
+
+}
+
+.main p {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-style: italic;
+    color: rgb(87, 87, 249);
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+.call-to-action {
+    cursor: pointer;
+    background-color: #FFFFFF;
+    border: 0;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    transition: 0.9s;
+}
+
+.call-to-action:hover {
+    color: rgb(87, 87, 249);
+    transform: scale(1.1);
+
+}
+
+.main a {
+    text-decoration: none;
+    color: black;
+}
+
+.sobre {
+    background-color: #FFFFFF;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 80xp;
+    padding-bottom: 80xp;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sobre div {
+    max-width: 50%;
+    padding-right: 40px;
+}
+
+.sobre img {
+    max-width: 450px;
+    border-radius: 8px;
+    padding-top: 7%;
+    padding-bottom: 7%;
+
+}
+
+.sobre h2 {
+    font-size: 32px;
+}
+
+.projetos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+
+}
+
+.projetos h2 {
+    font-size: 32px;
+    margin-bottom: 8px;
+    margin-top: 20px;
+
+}
+
+.projetos p {
+
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+.projeto-list {
+    width: 100%;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projetos img {
+    width: 22%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    opacity: 0.8;
+    transition: 0.9s;
+}
+
+.projetos img:hover {
+    opacity: 1;
+}
+
+.orcamento {
+    background-color: black;
+    border: 0;
+    padding: 12px 28px;
+    border-radius: 4px;
+    font-size: 18px;
+    color: #ffffffd4;
+    margin-top: 14px;
+    cursor: pointer
+}
+
+.orcamento:hover {
+    color: #FFFFFF
+}
+
+footer {
+    width: 100%;
+    background-color: black;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF
+}
+
+footer a {
+    color: #FFFFFF
+}
+
+footer p {
+    margin-left: 12px;
+}
+
+@media (max-width:855px) {
+    .main h1 {
+        font-size: 45px;
+    }
+
+    .main p {
+        font-size: 18px;
+    }
+
+    .main {
+        background-size: cover;
+    }
+
+    .sobre {
+        flex-direction: column;
+        padding-top: 80px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+
+    .sobre div {
+        max-width: 80%;
+
+    }
+
+    .sobre div h2 {
+        font-size: 45px;
+
+    }
+
+    .sobre img {
+        width: 80%;
+        margin-top: 30px;
+    }
+
+    .projeto-list {
+        width: 140.5%;
+    }
+
+    footer {
+        flex-direction: column;
+
+    }
+
+    footer h3 {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+
+    footer p {
+        margin: 0;
+    }
+
+
+}
